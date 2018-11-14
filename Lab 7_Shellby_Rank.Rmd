@@ -48,5 +48,20 @@ There is no significant difference in pre-talk ranks between males and females.
 
 
 
+Collaborator: 
+
+Is there a sig diff in kermit ranks for pre-talk and post-talk scores (ignoring all other variables)?
+
+H0: There is no sig diff
+HA: There is a sig diff
+
+```{r}
+
+wsr_kermit<-wilcox.test(kermit$Score.pre, kermit$Score.post, paired=TRUE)
+wsr_kermit
+
+#There is no sig diff in Kermit rankings before and after his talk (summary...)
+
+```
 
 
