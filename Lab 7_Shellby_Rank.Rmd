@@ -10,3 +10,22 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 It's me, Shellbs. I created this rmd file.
+
+Adrienne on the collab. Going to make some histograms
+
+```{r}
+
+library(tidyverse)
+
+kermit<-read_csv("kermit.csv")
+kermit
+
+#Made a histogram
+kermit_hist<-ggplot(kermit, aes(x=Score.pre))+
+  geom_histogram()+
+  facet_wrap(~Gender)
+
+kermit_hist
+
+```
+
